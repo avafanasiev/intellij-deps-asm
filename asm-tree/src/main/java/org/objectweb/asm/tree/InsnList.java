@@ -233,6 +233,7 @@ public class InsnList {
     lastInsn = insnNode;
     cache = null;
     insnNode.index = 0; // insnNode now belongs to an InsnList.
+    return;
   }
 
   /**
