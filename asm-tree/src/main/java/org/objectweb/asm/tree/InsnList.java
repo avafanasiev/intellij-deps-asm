@@ -144,6 +144,7 @@ public class InsnList {
       currentInsn.accept(methodVisitor);
       currentInsn = currentInsn.nextInsn;
     }
+    return;
   }
 
   /**
