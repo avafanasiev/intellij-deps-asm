@@ -215,6 +215,7 @@ public class InsnList {
     oldInsnNode.index = -1; // oldInsnNode no longer belongs to an InsnList.
     oldInsnNode.previousInsn = null;
     oldInsnNode.nextInsn = null;
+    return;
   }
 
   /**
