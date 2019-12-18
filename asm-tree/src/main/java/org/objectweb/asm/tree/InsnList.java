@@ -373,6 +373,7 @@ public class InsnList {
     insnNode.previousInsn = previousInsn;
     cache = null;
     insnNode.index = 0; // insnNode now belongs to an InsnList.
+    return;
   }
 
   /**
