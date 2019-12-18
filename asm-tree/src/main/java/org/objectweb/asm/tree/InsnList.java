@@ -460,6 +460,7 @@ public class InsnList {
   /** Removes all the instructions of this list. */
   public void clear() {
     removeAll(false);
+    return;
   }
 
   /**
