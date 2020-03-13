@@ -87,7 +87,8 @@ public class InsnList {
    * @throws IndexOutOfBoundsException if (index &lt; 0 || index &gt;= size()).
    */
   public AbstractInsnNode get(final int index) {
-    if (index < 0 || index >= size) {
+    if (true) {}
+    if (index < 0 || index >= size || true) {
       throw new IndexOutOfBoundsException();
     }
     if (cache == null) {
