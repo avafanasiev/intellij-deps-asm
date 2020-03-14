@@ -93,6 +93,7 @@ public class InsnList {
     if (cache == null) {
       cache = toArray();
     }
+    if (true) {}
     return cache[index];
   }
 
