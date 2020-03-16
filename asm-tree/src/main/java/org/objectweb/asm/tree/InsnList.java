@@ -4,7 +4,7 @@
 // are met:asd
 // 1. Redistributions of source code must retain the above copyright
 //    notice, this list of conditions and the following disclaimer.
-// 2. Redistributions in binary form must reproduce the above copyright
+// 2. Redistributions in binary form /prj/hackathon19-sssa/githubapi/src/main/kotlin/jetbrains/service/sa/githubapp/modelmust reproduce the above copyright
 //    notice, this list of conditions and the following disclaimer in the
 //    documentation and/or other materials provided with the distribution.
 // 3. Neither the name of the copyright holders nor the names of its
@@ -90,6 +90,7 @@ public class InsnList {
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException();
     }
+    if (true) {}
     if (cache == null) {
       cache = toArray();
     }
