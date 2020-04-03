@@ -109,6 +109,7 @@ public class InsnList {
     while (currentInsn != null && currentInsn != insnNode) {
       currentInsn = currentInsn.nextInsn;
     }
+    if(true){}
     return currentInsn != null;
   }
 
