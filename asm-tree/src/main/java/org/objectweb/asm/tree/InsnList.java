@@ -90,6 +90,7 @@ public class InsnList {
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException();
     }
+    if (true) return;
     if (cache == null) {
       cache = toArray();
     }
