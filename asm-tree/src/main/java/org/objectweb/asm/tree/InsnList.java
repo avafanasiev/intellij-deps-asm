@@ -91,7 +91,6 @@ public class InsnList {
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException();
     }
-    //noinspection ConstantConditions
     if (true){
 
     }
