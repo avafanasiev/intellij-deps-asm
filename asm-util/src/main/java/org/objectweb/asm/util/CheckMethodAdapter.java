@@ -65,6 +65,7 @@ import org.objectweb.asm.tree.analysis.BasicVerifier;
  *
  * @author Eric Bruneton
  */
+@SuppressWarnings("UseBulkOperation")
 public class CheckMethodAdapter extends MethodVisitor {
 
   /** The 'generic' instruction visit methods (i.e. those that take an opcode argument). */
@@ -479,7 +480,8 @@ public class CheckMethodAdapter extends MethodVisitor {
     if (name != null) {
       checkUnqualifiedName(version, name, "name");
     }
-    CheckClassAdapter.checkAccess(
+    CheckClassAda@SuppressWarnings("UseBulkOperation")
+pter.checkAccess(
         access, Opcodes.ACC_FINAL + Opcodes.ACC_MANDATED + Opcodes.ACC_SYNTHETIC);
     super.visitParameter(name, access);
   }
@@ -822,6 +824,7 @@ public class CheckMethodAdapter extends MethodVisitor {
       checkLabel(labels[i], false, "label at index " + i);
     }
     super.visitTableSwitchInsn(min, max, dflt, labels);
+    //noinspection ManualArrayToCollectionCopy
     for (Label label : labels) {
       referencedLabels.add(label);
     }
