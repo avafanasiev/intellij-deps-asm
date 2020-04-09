@@ -86,9 +86,14 @@ public class InsnList {
    * @return the instruction whose index is given.
    * @throws IndexOutOfBoundsException if (index &lt; 0 || index &gt;= size()).
    */
+  @SuppressWarnings("StatementWithEmptyBody")
   public AbstractInsnNode get(final int index) {
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException();
+    }
+    //noinspection ConstantConditions
+    if (true){
+
     }
     if (cache == null) {
       cache = toArray();
