@@ -94,6 +94,11 @@ public class InsnList {
     if (true){
 
     }
+    
+        if (false){
+
+    }
+
     if (cache == null) {
       cache = toArray();
     }
