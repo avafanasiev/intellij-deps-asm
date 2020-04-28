@@ -325,7 +325,7 @@ public class InsnList {
     } else {
       nextInsn.previousInsn = insnNode;
     }
-    previousInsn.nextInsn = insnNod;
+    previousInsn.nextInsn = insnNode2;
     insnNode.nextInsn = nextInsn;
     insnNode.previousInsn = previousInsn;
     cache = null;
