@@ -1,0 +1,312 @@
+JobScheduler FJ pool 4/4  Waiting CPU usage on sample: 0ms
+  jdk.internal.misc.Unsafe.park(boolean, long) Unsafe.java (native)
+  java.util.concurrent.locks.LockSupport.park(Object) LockSupport.java:194
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt() AbstractQueuedSynchronizer.java:885
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer$Node, int) AbstractQueuedSynchronizer.java:917
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(int) AbstractQueuedSynchronizer.java:1240
+  java.util.concurrent.locks.ReentrantLock.lock() ReentrantLock.java:267
+  com.intellij.util.indexing.impl.MapIndexStorage.read(Object) MapIndexStorage.java:210
+  com.intellij.util.indexing.impl.MapIndexStorage.read(Object) MapIndexStorage.java:35
+  com.intellij.util.indexing.impl.storage.TransientChangesIndexStorage.read(Object) TransientChangesIndexStorage.java:203
+  com.intellij.util.indexing.impl.MapReduceIndex.getData(Object) MapReduceIndex.java:213
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$9(UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:465
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2403.compute()
+  com.intellij.util.ConcurrencyUtil.withLock(Lock, ThrowableComputable) ConcurrencyUtil.java:231
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$10(UpdatableIndex, UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:464
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2402.compute()
+  com.intellij.util.indexing.FileBasedIndexImpl.disableUpToDateCheckIn(ThrowableComputable) FileBasedIndexImpl.java:604
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$11(UpdatableIndex, UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:464
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2401.compute()
+  com.intellij.util.indexing.IndexAccessValidator.validate(ID, ThrowableComputable) IndexAccessValidator.java:43
+  com.intellij.psi.stubs.StubIndexImpl.getContainingIds(StubIndexKey, Object, Project, IdFilter, GlobalSearchScope) StubIndexImpl.java:462
+  com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexKey, Object, Project, GlobalSearchScope, IdFilter, Class, Processor) StubIndexImpl.java:297
+  com.intellij.psi.stubs.StubIndex.getElements(StubIndexKey, Object, Project, GlobalSearchScope, IdFilter, Class) StubIndex.java:108
+  com.intellij.psi.stubs.StubIndex.getElements(StubIndexKey, Object, Project, GlobalSearchScope, Class) StubIndex.java:96
+  org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex.get(String, Project, GlobalSearchScope) KotlinFileFacadeFqNameIndex.kt:19
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport$findFilesForFacade$1.invoke() IDEKotlinAsJavaSupport.kt:223
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport$findFilesForFacade$1.invoke() IDEKotlinAsJavaSupport.kt:39
+  org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt$sam$com_intellij_openapi_util_Computable$0.compute() ApplicationUtils.kt
+  com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(Computable) ApplicationImpl.java:865
+  org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt.runReadAction(Function0) ApplicationUtils.kt:26
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport.findFilesForFacade(FqName, GlobalSearchScope) IDEKotlinAsJavaSupport.kt:222
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport.getFacadeClasses(FqName, GlobalSearchScope) IDEKotlinAsJavaSupport.kt:155
+  org.jetbrains.kotlin.asJava.finder.JavaElementFinder.findClasses(String, GlobalSearchScope) JavaElementFinder.kt:59
+  org.jetbrains.kotlin.asJava.finder.JavaElementFinder.findClass(String, GlobalSearchScope) JavaElementFinder.kt:47
+  com.intellij.psi.impl.JavaPsiFacadeImpl.doFindClass(String, GlobalSearchScope) JavaPsiFacadeImpl.java:107
+  com.intellij.psi.impl.JavaPsiFacadeImpl.findClass(String, GlobalSearchScope) JavaPsiFacadeImpl.java:84
+  com.intellij.psi.util.InheritanceUtil.isInheritor(PsiClass, boolean, String) InheritanceUtil.java:94
+  org.jetbrains.plugins.javaFX.JavaFxMainMethodRunConfigurationProvider.isApplicable(PsiClass) JavaFxMainMethodRunConfigurationProvider.java:19
+  com.intellij.psi.util.PsiMethodUtil.hasMainMethod(PsiClass) PsiMethodUtil.java:54
+  com.intellij.codeInspection.deadCode.UnusedDeclarationInspectionBase.hasMainMethodDeep(PsiClass) UnusedDeclarationInspectionBase.java:332
+  com.intellij.codeInspection.deadCode.UnusedDeclarationInspectionBase.isEntryPoint(PsiElement) UnusedDeclarationInspectionBase.java:316
+  org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection$Companion.isEntryPoint(KtNamedDeclaration) UnusedSymbolInspection.kt:132
+  org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection$buildVisitor$1.invoke(KtNamedDeclaration) UnusedSymbolInspection.kt:221
+  org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection$buildVisitor$1.invoke(Object) UnusedSymbolInspection.kt:91
+  org.jetbrains.kotlin.psi.VisitorWrappersKt$namedDeclarationVisitor$1.visitNamedDeclaration(KtNamedDeclaration) VisitorWrappers.kt:393
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedDeclaration(KtNamedDeclaration, Void) KtVisitorVoid.java:965
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedDeclaration(KtNamedDeclaration, Object) KtVisitorVoid.java:21
+  org.jetbrains.kotlin.psi.KtVisitor.visitClassOrObject(KtClassOrObject, Object) KtVisitor.java:41
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitClassOrObject(KtClassOrObject) KtVisitorVoid.java:37
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitClassOrObject(KtClassOrObject, Void) KtVisitorVoid.java:465
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitClassOrObject(KtClassOrObject, Object) KtVisitorVoid.java:21
+  org.jetbrains.kotlin.psi.KtVisitor.visitClass(KtClass, Object) KtVisitor.java:33
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitClass(KtClass) KtVisitorVoid.java:33
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitClass(KtClass, Void) KtVisitorVoid.java:459
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitClass(KtClass, Object) KtVisitorVoid.java:21
+  org.jetbrains.kotlin.psi.KtClass.accept(KtVisitor, Object) KtClass.kt:20
+  org.jetbrains.kotlin.psi.KtElementImplStub.accept(PsiElementVisitor) KtElementImplStub.java:59
+  com.intellij.codeInspection.InspectionEngine.acceptElements(List, PsiElementVisitor) InspectionEngine.java:65
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitRestElementsAndCleanup$6(List, LocalInspectionsPass$InspectionContext) LocalInspectionsPass.java:317
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass$$Lambda$2504.run()
+  com.intellij.util.AstLoadingFilter.lambda$toComputable$2(ThrowableRunnable) AstLoadingFilter.java:168
+  com.intellij.util.AstLoadingFilter$$Lambda$2505.compute()
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableComputable, Supplier) AstLoadingFilter.java:126
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableComputable) AstLoadingFilter.java:115
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableRunnable) AstLoadingFilter.java:110
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitRestElementsAndCleanup$7(List, LocalInspectionToolSession, LocalInspectionsPass$InspectionContext) LocalInspectionsPass.java:317
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass$$Lambda$2503.process(Object)
+  com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks() ApplierCompleter.java:162  <4 recursive calls>
+  com.intellij.concurrency.ApplierCompleter$$Lambda$2486.run()
+  com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(Runnable) ApplicationImpl.java:1124
+  com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(Runnable) ApplierCompleter.java:105
+  com.intellij.concurrency.ApplierCompleter$$Lambda$2487.run()
+  com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(ProgressIndicator, Thread, ProgressIndicator, Runnable) CoreProgressManager.java:628
+  com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(Runnable, ProgressIndicator) CoreProgressManager.java:580
+  com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(Runnable, ProgressIndicator) ProgressManagerImpl.java:60
+  com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(Runnable) ApplierCompleter.java:117
+  com.intellij.concurrency.ApplierCompleter.compute() ApplierCompleter.java:99
+  java.util.concurrent.CountedCompleter.exec() CountedCompleter.java:746
+  java.util.concurrent.ForkJoinTask.doExec() ForkJoinTask.java:290
+  java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinTask, ForkJoinPool$WorkQueue, int) ForkJoinPool.java:1020
+  java.util.concurrent.ForkJoinPool.scan(ForkJoinPool$WorkQueue, int) ForkJoinPool.java:1656
+  java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool$WorkQueue) ForkJoinPool.java:1594
+  java.util.concurrent.ForkJoinWorkerThread.run() ForkJoinWorkerThread.java:177
+
+JobScheduler FJ pool 2/4  Waiting CPU usage on sample: 0ms
+  jdk.internal.misc.Unsafe.park(boolean, long) Unsafe.java (native)
+  java.util.concurrent.locks.LockSupport.park(Object) LockSupport.java:194
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt() AbstractQueuedSynchronizer.java:885
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer$Node, int) AbstractQueuedSynchronizer.java:917
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(int) AbstractQueuedSynchronizer.java:1240
+  java.util.concurrent.locks.ReentrantLock.lock() ReentrantLock.java:267
+  com.intellij.util.indexing.impl.MapIndexStorage.read(Object) MapIndexStorage.java:210
+  com.intellij.util.indexing.impl.MapIndexStorage.read(Object) MapIndexStorage.java:35
+  com.intellij.util.indexing.impl.storage.TransientChangesIndexStorage.read(Object) TransientChangesIndexStorage.java:203
+  com.intellij.util.indexing.impl.MapReduceIndex.getData(Object) MapReduceIndex.java:213
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$9(UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:465
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2403.compute()
+  com.intellij.util.ConcurrencyUtil.withLock(Lock, ThrowableComputable) ConcurrencyUtil.java:231
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$10(UpdatableIndex, UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:464
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2402.compute()
+  com.intellij.util.indexing.FileBasedIndexImpl.disableUpToDateCheckIn(ThrowableComputable) FileBasedIndexImpl.java:604
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$11(UpdatableIndex, UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:464
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2401.compute()
+  com.intellij.util.indexing.IndexAccessValidator.validate(ID, ThrowableComputable) IndexAccessValidator.java:43
+  com.intellij.psi.stubs.StubIndexImpl.getContainingIds(StubIndexKey, Object, Project, IdFilter, GlobalSearchScope) StubIndexImpl.java:462
+  com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexKey, Object, Project, GlobalSearchScope, IdFilter, Class, Processor) StubIndexImpl.java:297
+  com.intellij.psi.stubs.StubIndex.getElements(StubIndexKey, Object, Project, GlobalSearchScope, IdFilter, Class) StubIndex.java:108
+  com.intellij.psi.stubs.StubIndex.getElements(StubIndexKey, Object, Project, GlobalSearchScope, Class) StubIndex.java:96
+  org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex.get(String, Project, GlobalSearchScope) KotlinFileFacadeFqNameIndex.kt:19
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport$findFilesForFacade$1.invoke() IDEKotlinAsJavaSupport.kt:223
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport$findFilesForFacade$1.invoke() IDEKotlinAsJavaSupport.kt:39
+  org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt$sam$com_intellij_openapi_util_Computable$0.compute() ApplicationUtils.kt
+  com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(Computable) ApplicationImpl.java:865
+  org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt.runReadAction(Function0) ApplicationUtils.kt:26
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport.findFilesForFacade(FqName, GlobalSearchScope) IDEKotlinAsJavaSupport.kt:222
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport.getFacadeClasses(FqName, GlobalSearchScope) IDEKotlinAsJavaSupport.kt:155
+  org.jetbrains.kotlin.asJava.finder.JavaElementFinder.findClasses(String, GlobalSearchScope) JavaElementFinder.kt:59
+  org.jetbrains.kotlin.asJava.finder.JavaElementFinder.findClass(String, GlobalSearchScope) JavaElementFinder.kt:47
+  com.intellij.psi.impl.JavaPsiFacadeImpl.doFindClass(String, GlobalSearchScope) JavaPsiFacadeImpl.java:107
+  com.intellij.psi.impl.JavaPsiFacadeImpl.findClass(String, GlobalSearchScope) JavaPsiFacadeImpl.java:84
+  com.intellij.execution.junit.JUnitUtil.hasTestableMetaAnnotation(PsiClass) JUnitUtil.java:169
+  com.intellij.execution.junit.JUnitUtil.isTestClass(PsiClass, boolean, boolean) JUnitUtil.java:181
+  com.intellij.execution.junit.JUnitUtil.isTestMethod(Location, boolean, boolean, boolean) JUnitUtil.java:134
+  com.intellij.execution.junit.JUnitUtil.isTestMethod(Location, boolean, boolean) JUnitUtil.java:128
+  com.intellij.execution.junit.JUnitUtil.isTestMethod(Location, boolean) JUnitUtil.java:124
+  com.intellij.execution.junit.JUnitUtil.isTestMethodOrConfig(PsiMethod) JUnitUtil.java:407
+  com.intellij.execution.junit2.inspection.JUnitEntryPoint.isEntryPoint(PsiElement) JUnitEntryPoint.java:65
+  com.intellij.codeInspection.deadCode.UnusedDeclarationInspectionBase.isEntryPoint(PsiElement) UnusedDeclarationInspectionBase.java:324
+  org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection$Companion.isEntryPoint(KtNamedDeclaration) UnusedSymbolInspection.kt:132
+  org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection$buildVisitor$1.invoke(KtNamedDeclaration) UnusedSymbolInspection.kt:221
+  org.jetbrains.kotlin.idea.inspections.UnusedSymbolInspection$buildVisitor$1.invoke(Object) UnusedSymbolInspection.kt:91
+  org.jetbrains.kotlin.psi.VisitorWrappersKt$namedDeclarationVisitor$1.visitNamedDeclaration(KtNamedDeclaration) VisitorWrappers.kt:393
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedDeclaration(KtNamedDeclaration, Void) KtVisitorVoid.java:965
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedDeclaration(KtNamedDeclaration, Object) KtVisitorVoid.java:21
+  org.jetbrains.kotlin.psi.KtVisitor.visitNamedFunction(KtNamedFunction, Object) KtVisitor.java:53
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedFunction(KtNamedFunction) KtVisitorVoid.java:49
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedFunction(KtNamedFunction, Void) KtVisitorVoid.java:483
+  org.jetbrains.kotlin.psi.KtVisitorVoid.visitNamedFunction(KtNamedFunction, Object) KtVisitorVoid.java:21
+  org.jetbrains.kotlin.psi.KtNamedFunction.accept(KtVisitor, Object) KtNamedFunction.java:50
+  org.jetbrains.kotlin.psi.KtElementImplStub.accept(PsiElementVisitor) KtElementImplStub.java:59
+  com.intellij.codeInspection.InspectionEngine.acceptElements(List, PsiElementVisitor) InspectionEngine.java:65
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitRestElementsAndCleanup$6(List, LocalInspectionsPass$InspectionContext) LocalInspectionsPass.java:317
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass$$Lambda$2504.run()
+  com.intellij.util.AstLoadingFilter.lambda$toComputable$2(ThrowableRunnable) AstLoadingFilter.java:168
+  com.intellij.util.AstLoadingFilter$$Lambda$2505.compute()
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableComputable, Supplier) AstLoadingFilter.java:126
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableComputable) AstLoadingFilter.java:115
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableRunnable) AstLoadingFilter.java:110
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitRestElementsAndCleanup$7(List, LocalInspectionToolSession, LocalInspectionsPass$InspectionContext) LocalInspectionsPass.java:317
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass$$Lambda$2503.process(Object)
+  com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks() ApplierCompleter.java:162  <4 recursive calls>
+  com.intellij.concurrency.ApplierCompleter$$Lambda$2486.run()
+  com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(Runnable) ApplicationImpl.java:1124
+  com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(Runnable) ApplierCompleter.java:105
+  com.intellij.concurrency.ApplierCompleter$$Lambda$2487.run()
+  com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(ProgressIndicator, Thread, ProgressIndicator, Runnable) CoreProgressManager.java:628
+  com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(Runnable, ProgressIndicator) CoreProgressManager.java:580
+  com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(Runnable, ProgressIndicator) ProgressManagerImpl.java:60
+  com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(Runnable) ApplierCompleter.java:117
+  com.intellij.concurrency.ApplierCompleter.compute() ApplierCompleter.java:99
+  java.util.concurrent.CountedCompleter.exec() CountedCompleter.java:746
+  java.util.concurrent.ForkJoinTask.doExec() ForkJoinTask.java:290
+  java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinTask, ForkJoinPool$WorkQueue, int) ForkJoinPool.java:1020
+  java.util.concurrent.ForkJoinPool.scan(ForkJoinPool$WorkQueue, int) ForkJoinPool.java:1656
+  java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool$WorkQueue) ForkJoinPool.java:1594
+  java.util.concurrent.ForkJoinWorkerThread.run() ForkJoinWorkerThread.java:177
+
+
+JobScheduler FJ pool 1/4  Waiting CPU usage on sample: 0ms
+  jdk.internal.misc.Unsafe.park(boolean, long) Unsafe.java (native)
+  java.util.concurrent.locks.LockSupport.park(Object) LockSupport.java:194
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt() AbstractQueuedSynchronizer.java:885
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer$Node, int) AbstractQueuedSynchronizer.java:917
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(int) AbstractQueuedSynchronizer.java:1240
+  java.util.concurrent.locks.ReentrantLock.lock() ReentrantLock.java:267
+  com.intellij.util.indexing.impl.MapIndexStorage.read(Object) MapIndexStorage.java:210
+  com.intellij.util.indexing.impl.MapIndexStorage.read(Object) MapIndexStorage.java:35
+  com.intellij.util.indexing.impl.storage.TransientChangesIndexStorage.read(Object) TransientChangesIndexStorage.java:203
+  com.intellij.util.indexing.impl.MapReduceIndex.getData(Object) MapReduceIndex.java:213
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$9(UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:465
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2403.compute()
+  com.intellij.util.ConcurrencyUtil.withLock(Lock, ThrowableComputable) ConcurrencyUtil.java:231
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$10(UpdatableIndex, UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:464
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2402.compute()
+  com.intellij.util.indexing.FileBasedIndexImpl.disableUpToDateCheckIn(ThrowableComputable) FileBasedIndexImpl.java:604
+  com.intellij.psi.stubs.StubIndexImpl.lambda$getContainingIds$11(UpdatableIndex, UpdatableIndex, Object, IdFilter, TIntArrayList) StubIndexImpl.java:464
+  com.intellij.psi.stubs.StubIndexImpl$$Lambda$2401.compute()
+  com.intellij.util.indexing.IndexAccessValidator.validate(ID, ThrowableComputable) IndexAccessValidator.java:43
+  com.intellij.psi.stubs.StubIndexImpl.getContainingIds(StubIndexKey, Object, Project, IdFilter, GlobalSearchScope) StubIndexImpl.java:462
+  com.intellij.psi.stubs.StubIndexImpl.processElements(StubIndexKey, Object, Project, GlobalSearchScope, IdFilter, Class, Processor) StubIndexImpl.java:297
+  com.intellij.psi.stubs.StubIndex.getElements(StubIndexKey, Object, Project, GlobalSearchScope, IdFilter, Class) StubIndex.java:108
+  com.intellij.psi.stubs.StubIndex.getElements(StubIndexKey, Object, Project, GlobalSearchScope, Class) StubIndex.java:96
+  org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex.get(String, Project, GlobalSearchScope) KotlinFileFacadeFqNameIndex.kt:19
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport$findFilesForFacade$1.invoke() IDEKotlinAsJavaSupport.kt:223
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport$findFilesForFacade$1.invoke() IDEKotlinAsJavaSupport.kt:39
+  org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt$sam$com_intellij_openapi_util_Computable$0.compute() ApplicationUtils.kt
+  com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(Computable) ApplicationImpl.java:865
+  org.jetbrains.kotlin.idea.util.application.ApplicationUtilsKt.runReadAction(Function0) ApplicationUtils.kt:26
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport.findFilesForFacade(FqName, GlobalSearchScope) IDEKotlinAsJavaSupport.kt:222
+  org.jetbrains.kotlin.idea.caches.resolve.IDEKotlinAsJavaSupport.getFacadeClasses(FqName, GlobalSearchScope) IDEKotlinAsJavaSupport.kt:155
+  org.jetbrains.kotlin.asJava.finder.JavaElementFinder.findClasses(String, GlobalSearchScope) JavaElementFinder.kt:59
+  org.jetbrains.kotlin.asJava.LightClassUtil.findFileFacade(KtFile) LightClassUtil.kt:173
+  org.jetbrains.kotlin.asJava.LightClassUtil.getWrappingClass(KtDeclaration) LightClassUtil.kt:157
+  org.jetbrains.kotlin.asJava.LightClassUtil.getWrappingClasses(KtDeclaration) LightClassUtil.kt:181
+  org.jetbrains.kotlin.asJava.LightClassUtil.getPsiMethodWrappers(KtDeclaration) LightClassUtil.kt:132
+  org.jetbrains.kotlin.asJava.LightClassUtil.getPsiMethodWrapper(KtDeclaration) LightClassUtil.kt:128
+  org.jetbrains.kotlin.asJava.LightClassUtil.getLightClassMethod(KtFunction) LightClassUtil.kt:113
+  org.jetbrains.uast.kotlin.KotlinConverter$convertParameter$1.invoke() KotlinUastLanguagePlugin.kt:659
+  org.jetbrains.uast.kotlin.KotlinConverter$convertParameter$1.invoke() KotlinUastLanguagePlugin.kt:188
+  org.jetbrains.uast.kotlin.KotlinUastLanguagePluginKt$accommodate$2.invoke(UElementAlternative) KotlinUastLanguagePlugin.kt:756
+  org.jetbrains.uast.kotlin.KotlinUastLanguagePluginKt$accommodate$2.invoke(Object) KotlinUastLanguagePlugin.kt
+  kotlin.sequences.TransformingSequence$iterator$1.next() Sequences.kt:172
+  kotlin.sequences.FilteringSequence$iterator$1.calcNext() Sequences.kt:132
+  kotlin.sequences.FilteringSequence$iterator$1.hasNext() Sequences.kt:156
+  kotlin.sequences.SequencesKt___SequencesKt.firstOrNull(Sequence) _Sequences.kt:129
+  org.jetbrains.uast.kotlin.KotlinConverter.convertDeclaration$uast_kotlin(PsiElement, UElement, Class[]) KotlinUastLanguagePlugin.kt:578
+  org.jetbrains.uast.kotlin.KotlinConverter.convertDeclarationOrElement(PsiElement, UElement, Class[]) KotlinUastLanguagePlugin.kt:625
+  org.jetbrains.uast.kotlin.KotlinUastLanguagePlugin.convertElementWithParent(PsiElement, Class) KotlinUastLanguagePlugin.kt:92
+  org.jetbrains.uast.UastFacade.convertElementWithParent(PsiElement, Class) UastContext.kt:64
+  org.jetbrains.uast.UastContextKt.toUElement(PsiElement) UastContext.kt:104
+  com.intellij.uast.UastVisitorAdapter.visitElement(PsiElement) UastVisitorAdapter.java:46
+  org.jetbrains.kotlin.psi.KtElementImplStub.accept(PsiElementVisitor) KtElementImplStub.java:62
+  com.intellij.codeInspection.InspectionEngine.acceptElements(List, PsiElementVisitor) InspectionEngine.java:65
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitRestElementsAndCleanup$6(List, LocalInspectionsPass$InspectionContext) LocalInspectionsPass.java:317
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass$$Lambda$2504.run()
+  com.intellij.util.AstLoadingFilter.lambda$toComputable$2(ThrowableRunnable) AstLoadingFilter.java:168
+  com.intellij.util.AstLoadingFilter$$Lambda$2505.compute()
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableComputable, Supplier) AstLoadingFilter.java:126
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableComputable) AstLoadingFilter.java:115
+  com.intellij.util.AstLoadingFilter.disallowTreeLoading(ThrowableRunnable) AstLoadingFilter.java:110
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$visitRestElementsAndCleanup$7(List, LocalInspectionToolSession, LocalInspectionsPass$InspectionContext) LocalInspectionsPass.java:317
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass$$Lambda$2503.process(Object)
+  com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks() ApplierCompleter.java:162  <2 recursive calls>
+  com.intellij.concurrency.ApplierCompleter$$Lambda$2486.run()
+  com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(Runnable) ApplicationImpl.java:1119
+  com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(Runnable) ApplierCompleter.java:105
+  com.intellij.concurrency.ApplierCompleter$$Lambda$2487.run()
+  com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(ProgressIndicator, Thread, ProgressIndicator, Runnable) CoreProgressManager.java:628
+  com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(Runnable, ProgressIndicator) CoreProgressManager.java:580
+  com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(Runnable, ProgressIndicator) ProgressManagerImpl.java:60
+  com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(Runnable) ApplierCompleter.java:117
+  com.intellij.concurrency.ApplierCompleter.compute() ApplierCompleter.java:99
+  java.util.concurrent.CountedCompleter.exec() CountedCompleter.java:746
+  java.util.concurrent.ForkJoinTask.doExec() ForkJoinTask.java:290
+  java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool$WorkQueue, ForkJoinTask, long) ForkJoinPool.java:1708
+  java.util.concurrent.ForkJoinTask.get(long, TimeUnit) ForkJoinTask.java:1039
+  com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(List, ProgressIndicator, boolean, boolean, Processor) JobLauncherImpl.java:70
+  com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(List, ProgressIndicator, Processor) JobLauncher.java:49
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.visitRestElementsAndCleanup(ProgressIndicator, List, LocalInspectionToolSession, List) LocalInspectionsPass.java:328
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.inspect(List, InspectionManager, boolean, ProgressIndicator) LocalInspectionsPass.java:195
+  com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.doInspectInBatch(GlobalInspectionContextImpl, InspectionManager, List) LocalInspectionsPass.java:129
+  com.intellij.codeInspection.ex.GlobalInspectionContextImpl.inspectFile(PsiFile, TextRange, InspectionManager, Map, List, List) GlobalInspectionContextImpl.java:408
+  com.intellij.codeInspection.ex.GlobalInspectionContextImpl.lambda$runTools$3(PsiFile, AnalysisScope, SearchScope, InspectionManager, Map, List, List) GlobalInspectionContextImpl.java:284
+  com.intellij.codeInspection.ex.GlobalInspectionContextImpl$$Lambda$2472.compute()
+  com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$0(Ref, Computable) DumbService.java:103
+  com.intellij.openapi.project.DumbService$$Lambda$1619.run()
+  com.intellij.openapi.project.DumbService.lambda$runReadActionInSmartMode$1(Runnable) DumbService.java:147
+  com.intellij.openapi.project.DumbService$$Lambda$1606.compute()
+  com.intellij.openapi.application.impl.ApplicationImpl.runReadAction(ThrowableComputable) ApplicationImpl.java:883
+  com.intellij.openapi.application.ReadAction.compute(ThrowableComputable) ReadAction.java:61
+  com.intellij.openapi.project.DumbService.runReadActionInSmartMode(Runnable) DumbService.java:140
+  com.intellij.openapi.project.DumbService.runReadActionInSmartMode(Computable) DumbService.java:103
+  com.intellij.openapi.project.DumbService.tryRunReadActionInSmartMode(Computable, String) DumbService.java:120
+  com.intellij.codeInspection.ex.GlobalInspectionContextImpl.lambda$runTools$8(AnalysisScope, SearchScope, InspectionManager, Map, List, List, PsiFile) GlobalInspectionContextImpl.java:274
+  com.intellij.codeInspection.ex.GlobalInspectionContextImpl$$Lambda$2467.process(Object)
+  com.intellij.concurrency.JobLauncherImpl$1MyTask.lambda$call$0(Queue, BlockingQueue, Object, Processor) JobLauncherImpl.java:289
+  com.intellij.concurrency.JobLauncherImpl$1MyTask$$Lambda$2471.run()
+  com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(ProgressIndicator, Thread, ProgressIndicator, Runnable) CoreProgressManager.java:628
+  com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(Runnable, ProgressIndicator) CoreProgressManager.java:580
+  com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(Runnable, ProgressIndicator) ProgressManagerImpl.java:60
+  com.intellij.concurrency.JobLauncherImpl$1MyTask.call() JobLauncherImpl.java:276
+  com.intellij.concurrency.JobLauncherImpl$1MyTask.call() JobLauncherImpl.java:266
+  java.util.concurrent.ForkJoinTask$AdaptedCallable.exec() ForkJoinTask.java:1448
+  java.util.concurrent.ForkJoinTask.doExec() ForkJoinTask.java:290
+  java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinTask, ForkJoinPool$WorkQueue, int) ForkJoinPool.java:1020
+  java.util.concurrent.ForkJoinPool.scan(ForkJoinPool$WorkQueue, int) ForkJoinPool.java:1656
+  java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool$WorkQueue) ForkJoinPool.java:1594
+  java.util.concurrent.ForkJoinWorkerThread.run() ForkJoinWorkerThread.java:177
+
+ApplicationImpl pooled thread 42  Waiting CPU usage on sample: 0ms
+  jdk.internal.misc.Unsafe.park(boolean, long) Unsafe.java (native)
+  java.util.concurrent.locks.LockSupport.park(Object) LockSupport.java:194
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt() AbstractQueuedSynchronizer.java:885
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer$Node, int) AbstractQueuedSynchronizer.java:917
+  java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(int) AbstractQueuedSynchronizer.java:1240
+  java.util.concurrent.locks.ReentrantLock.lock() ReentrantLock.java:267
+  com.intellij.util.indexing.impl.storage.VfsAwareMapIndexStorage.flush() VfsAwareMapIndexStorage.java:104
+  com.intellij.util.indexing.impl.storage.TransientChangesIndexStorage.flush() TransientChangesIndexStorage.java:117
+  com.intellij.util.indexing.impl.MapReduceIndex.doFlush() MapReduceIndex.java:171
+  com.intellij.util.indexing.impl.storage.VfsAwareMapReduceIndex.doFlush() VfsAwareMapReduceIndex.java:399
+  com.intellij.util.indexing.impl.MapReduceIndex.flush() MapReduceIndex.java:150
+  com.intellij.psi.stubs.StubIndexImpl.flush() StubIndexImpl.java:268
+  com.intellij.psi.stubs.StubUpdatingIndex$MyIndex.doFlush() StubUpdatingIndex.java:385
+  com.intellij.util.indexing.impl.MapReduceIndex.flush() MapReduceIndex.java:150
+  com.intellij.util.indexing.FileBasedIndexImpl.flushAllIndices(long) FileBasedIndexImpl.java:588
+  com.intellij.util.indexing.FileBasedIndexImpl.access$700(FileBasedIndexImpl, long) FileBasedIndexImpl.java:93
+  com.intellij.util.indexing.FileBasedIndexImpl$6.run() FileBasedIndexImpl.java:1765
+  com.intellij.util.ConcurrencyUtil.runUnderThreadName(String, Runnable) ConcurrencyUtil.java:210
+  com.intellij.util.ConcurrencyUtil.lambda$underThreadNameRunnable$3(String, Runnable) ConcurrencyUtil.java:198
+  com.intellij.util.ConcurrencyUtil$$Lambda$349.run()
+  java.util.concurrent.Executors$RunnableAdapter.call() Executors.java:515
+  java.util.concurrent.FutureTask.runAndReset() FutureTask.java:305
+  com.intellij.util.concurrency.SchedulingWrapper$MyScheduledFutureTask.run() SchedulingWrapper.java:223
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor$Worker) ThreadPoolExecutor.java:1128
+  java.util.concurrent.ThreadPoolExecutor$Worker.run() ThreadPoolExecutor.java:628
+  java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run() Executors.java:668
+  java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run() Executors.java:665
+  java.security.AccessController.doPrivileged(PrivilegedAction, AccessControlContext) AccessController.java (native)
+  java.util.concurrent.Executors$PrivilegedThreadFactory$1.run() Executors.java:665
+  java.lang.Thread.run() Thread.java:834
+
+
