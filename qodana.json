@@ -1,0 +1,30 @@
+{
+  "excludes": [
+    {
+      "paths": [
+        "asm-tree/src/main/java/org/objectweb/asm/tree/Util.java"
+      ]
+    },
+    {
+      "paths": [
+        "."
+      ]
+    },
+    {
+      "inspections": [
+        "ConditionCoveredByFurtherCondition"
+      ],
+      "paths": [
+        ""
+      ]
+    },
+    {
+      "inspections": [
+        "HighlightVisitorInternal"
+      ],
+      "paths": [
+        "."
+      ]
+    }
+  ]
+}
