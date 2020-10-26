@@ -7,7 +7,7 @@
     },
     {
       "inspections": [
-        "ConditionCoveredByFurtherCondition"
+        "RedundantArrayCreation"
       ],
       "paths": [
         ""
