@@ -6,11 +6,6 @@
       ]
     },
     {
-      "paths": [
-        "."
-      ]
-    },
-    {
       "inspections": [
         "ConditionCoveredByFurtherCondition"
       ],
