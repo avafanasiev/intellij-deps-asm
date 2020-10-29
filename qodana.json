@@ -1,4 +1,7 @@
 {
+  "profile": {
+    "name": "qodana.recommended"
+  },
   "excludes": [
     {
       "paths": [
@@ -6,8 +9,13 @@
       ]
     },
     {
+      "paths": [
+        "."
+      ]
+    },
+    {
       "inspections": [
-        "RedundantArrayCreation"
+        "ConditionCoveredByFurtherCondition"
       ],
       "paths": [
         ""
