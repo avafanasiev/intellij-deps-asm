@@ -9,11 +9,6 @@
       ]
     },
     {
-      "paths": [
-        "."
-      ]
-    },
-    {
       "inspections": [
         "ConditionCoveredByFurtherCondition"
       ],
