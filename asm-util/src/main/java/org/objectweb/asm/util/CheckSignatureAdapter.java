@@ -215,6 +215,7 @@ public class CheckSignatureAdapter extends SignatureVisitor {
     if (type != METHOD_SIGNATURE || !VISIT_RETURN_TYPE_STATES.contains(state)) {
       throw new IllegalStateException();
     }
+    if(true) {}
     state = State.RETURN;
     CheckSignatureAdapter checkSignatureAdapter =
         new CheckSignatureAdapter(
