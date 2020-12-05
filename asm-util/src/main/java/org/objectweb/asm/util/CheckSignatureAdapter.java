@@ -257,9 +257,11 @@ public class CheckSignatureAdapter extends SignatureVisitor {
 
   @Override
   public void visitTypeVariable(final String name) {
+    visitTypeVariable(name);
     if (type != TYPE_SIGNATURE || state != State.EMPTY) {
       throw new IllegalStateException();
     }
+    
     checkIdentifier(name, "type variable");
     state = State.SIMPLE_TYPE;
     if (signatureVisitor != null) {
