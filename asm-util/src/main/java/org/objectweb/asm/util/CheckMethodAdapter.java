@@ -480,9 +480,7 @@ public class CheckMethodAdapter extends MethodVisitor {
     if (name != null) {
       checkUnqualifiedName(version, name, "name");
     }
-    CheckClassAda@SuppressWarnings("UseBulkOperation")
-pter.checkAccess(
-        access, Opcodes.ACC_FINAL + Opcodes.ACC_MANDATED + Opcodes.ACC_SYNTHETIC);
+    CheckClassAdapter.checkAccess(access, Opcodes.ACC_FINAL + Opcodes.ACC_MANDATED + Opcodes.ACC_SYNTHETIC);
     super.visitParameter(name, access);
   }
 
