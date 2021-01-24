@@ -1,6 +1,0 @@
-exclude:
-  - name: HighlightVisitorInternal
-    paths:
-      - tools/retrofitter/src/main/java/org/objectweb/asm/tools/Retrofitter.java
-      - tools/bnd-module-plugin/src/main/java/org/objectweb/asm/tools/ModuleInfoBndPlugin.java
-
