@@ -3,4 +3,4 @@ stopThreshold: 100
 profile:
     name: qodana.recommended
 include:
-   name: unused
+  - name: unused
