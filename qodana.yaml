@@ -1,4 +1,7 @@
 exclude:
+  - name: All
+    paths:
+      - build.gradle
   - name: HighlightVisitorInternal
     paths:
       - tools/retrofitter/src/main/java/org/objectweb/asm/tools/Retrofitter.java
