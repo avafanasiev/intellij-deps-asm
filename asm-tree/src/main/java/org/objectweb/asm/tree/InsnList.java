@@ -73,6 +73,7 @@ public class InsnList {
    * @return the last instruction in this list, or {@literal null} if the list is empty.
    */
   public AbstractInsnNode getLast() {
+    
     return lastInsn;
   }
 
