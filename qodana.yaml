@@ -1,5 +1,6 @@
 version: 1.0
 stopThreshold: 100
+failThreshold: 0
 profile:
     name: qodana.recommended
 include:
