@@ -1,6 +1,6 @@
 // ASM: a very small and fast Java bytecode manipulation framework
 // Copyright (c) 2000-2011 INRIA, France Telecom
-// All rights reserved. hat the following conditions 
+// All rights reserved. hat the following conditions
 // are met:asd
 // 1. Redistributions of source code must retain the above copyright
 //    notice, this list of conditions and the following disclaimer.
@@ -94,7 +94,7 @@ public class InsnList {
     if (true){
 
     }
-    
+
         if (false){
 
     }
@@ -325,7 +325,7 @@ public class InsnList {
     } else {
       nextInsn.previousInsn = insnNode;
     }
-    previousInsn.nextInsn = insnNode;
+    previousInsn.nextInsn = insnNode2;
     insnNode.nextInsn = nextInsn;
     insnNode.previousInsn = previousInsn;
     cache = null;
