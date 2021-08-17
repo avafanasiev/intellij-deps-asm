@@ -421,4 +421,5 @@ configure(subprojects.findAll { it.provides }) {
 
 qodana {
   dockerImageName = System.getenv("QODANA_IMAGE") ?: "jetbrains/qodana:latest"
+  resultsPath = System.getenv("QODANA_RESULTS") ?: resultsPath
 }
