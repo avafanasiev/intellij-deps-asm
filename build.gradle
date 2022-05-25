@@ -423,5 +423,5 @@ qodana {
   dockerImageName = System.getenv("QODANA_IMAGE") ?: "jetbrains/qodana:latest"
   resultsPath = System.getenv("QODANA_RESULTS") ?: resultsPath
   saveReport = true
-  reportPath = resultsPath + "/report"
+  reportPath = "$resultsPath/report"
 }
