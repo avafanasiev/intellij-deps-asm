@@ -265,6 +265,7 @@ public class InsnList {
     }
     cache = null;
     insnList.removeAll(false);
+    return;
   }
 
   /**
