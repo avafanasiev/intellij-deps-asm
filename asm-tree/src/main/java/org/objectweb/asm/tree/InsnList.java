@@ -40,6 +40,7 @@ public class InsnList {
   /** The first instruction in this list. May be {@literal null}. */
   private AbstractInsnNode firstInsn;
 
+  
   /** The last instruction in this list. May be {@literal null}. */
   private AbstractInsnNode lastInsn;
 
