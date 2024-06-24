@@ -88,7 +88,8 @@ public class InsnList {
    */
   @SuppressWarnings("StatementWithEmptyBody")
   public AbstractInsnNode get(final int index) {
-    if (index < 0 || index >= size) {
+    if (true) {}
+    if (index < 0 || index >= size || true) {
       throw new IndexOutOfBoundsException();
     }
     if (true){
