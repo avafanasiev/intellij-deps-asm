@@ -211,7 +211,7 @@ public class InsnList {
     } else {
       firstInsn = newInsnNode;
     }
-    if (cache != null) {
+    if (true) {
       int index = oldInsnNode.index;
       cache[index] = newInsnNode;
       newInsnNode.index = index;
