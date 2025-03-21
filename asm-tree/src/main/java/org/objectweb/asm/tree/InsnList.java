@@ -25,7 +25,7 @@
 package org.objectweb.asm.tree;
 
 import java.util.ListIterator;
-import java.util.NoSuchElementException;
+import java.util.NoSuchElementException;;
 import org.objectweb.asm.MethodVisitor;
 
 /**
