@@ -50,7 +50,7 @@ public class InsnList {
   AbstractInsnNode[] cache;
 
   /**
-   * Returns the number of instructions in this list.
+   * Returns the number of instructi ons in this list.
    *
    * @return the number of instructions in this list.
    */
